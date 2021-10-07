@@ -2,13 +2,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>card-images</artifactId>
-    <packaging>jar</packaging>
+    <groupId>org.startup</groupId>
+    <artifactId>misc</artifactId>
+    <packaging>pom</packaging>
 
     <parent>
-        <groupId>org.startup</groupId>
-        <artifactId>part-05</artifactId>
+        <groupId>org</groupId>
+        <artifactId>startup</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <modules>
+        <module>test-utils</module>
+    </modules>
+
+
 
 </project>

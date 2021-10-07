@@ -1,16 +1,18 @@
 spring:
   application:
     name: user-collections-service
-  datasource:
-    url: "jdbc:postgresql://postgres-user-collections:5432/postgres"
-    username: "postgres"
-    password: ""
-    driver-class-name: org.postgresql.Driver
+  #datasource:
+    #url: "jdbc:postgresql://postgres-user-collections:5432/postgres"
+    #username: "postgres"
+    #password: ""
+    #driver-class-name: org.postgresql.Driver
   jpa:
-    database: postgresql
+    #database: postgresql
     hibernate:
       ddl-auto: validate
   mvc:
     throwExceptionIfNoHandlerFound: true
   resources:
-    add-mappings: false
+      add-mappings: false
+
+cardServiceAddress : "cards-service:8080"

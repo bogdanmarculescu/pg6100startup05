@@ -7,7 +7,7 @@
 
     <parent>
         <groupId>org.startup</groupId>
-        <artifactId>part05</artifactId>
+        <artifactId>part-05</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
