@@ -20,6 +20,8 @@
         <module>cards-dto</module>
         <module>rest-dto</module>
         <module>rest-exception</module>
+        <module>api-gateway</module>
+        <module>e2e-tests</module>
     </modules>
 
     <dependencies>

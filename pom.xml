@@ -32,12 +32,12 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <fs>${file.separator}</fs>
         <version.java>11</version.java>
-        <kotlin.version>1.5.21</kotlin.version>
-        <version.springcloud>Hoxton.RELEASE</version.springcloud>
-        <springboot.version>2.3.5.RELEASE</springboot.version>
+        <kotlin.version>1.5.31</kotlin.version>
+        <version.springcloud>2020.0.4</version.springcloud>
+        <springboot.version>2.5.5</springboot.version>
         <springfox.version>3.0.0</springfox.version>
         <version.junit>5.7.0</version.junit>
-        <version.junit.platform>1.5.2</version.junit.platform>
+        <version.junit.platform>1.6.2</version.junit.platform>
         <version.jacoco>0.8.5</version.jacoco>
 
         <!-- DB versions -->
@@ -48,6 +48,7 @@
         <version.restassured>4.2.0</version.restassured>
         <version.selenium>3.141.59</version.selenium>
         <version.surefire-failsafe>3.0.0-M4</version.surefire-failsafe>
+        <version.testcontainers>1.16.0</version.testcontainers>
     </properties>
     <dependencies>
 
