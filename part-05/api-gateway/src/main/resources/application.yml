@@ -12,6 +12,10 @@ spring:
         locator:
           enabled: true
       routes:
+        - id: Authentication
+          uri: http://authentication:8080
+          predicates:
+            - Path=/api/authentication/**
         - id: Cards
           uri: lb://cards-service
           predicates:
@@ -19,7 +23,7 @@ spring:
         - id: Scores
           uri: lb://scores-service
           predicates:
-            - Path=api/service/**
+            - Path=api/scores/**
         - id: User-Collections
           uri: lb://user-collections-service
           predicates:
