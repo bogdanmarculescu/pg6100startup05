@@ -39,6 +39,7 @@
         <version.selenium>3.141.59</version.selenium>
         <version.surefire-failsafe>3.0.0-M4</version.surefire-failsafe>
         <version.testcontainers>1.16.0</version.testcontainers>
+        <version.wiremock>2.27.2</version.wiremock>
     </properties>
     <dependencies>
 
@@ -68,6 +69,16 @@
                 <artifactId>test-utils</artifactId>
                 <version>${project.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.startup</groupId>
+                <artifactId>rest-dto</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.startup</groupId>
+                <artifactId>rest-exception</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- SpringBoot BOM -->
@@ -134,6 +145,11 @@
                 <version>${version.springcloud}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-security</artifactId>
+                <version>2.2.5.RELEASE</version>
             </dependency>
 
             <!-- SpringFox for Swagger/OpenAPI -->
@@ -203,7 +219,7 @@
                 <!-- to mock web services -->
                 <groupId>com.github.tomakehurst</groupId>
                 <artifactId>wiremock-standalone</artifactId>
-                <version>2.27.2</version>
+                <version>${version.wiremock}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>

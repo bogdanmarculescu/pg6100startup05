@@ -16,17 +16,14 @@
         <dependency>
             <groupId>org.startup</groupId>
             <artifactId>cards-dto</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.startup</groupId>
             <artifactId>rest-dto</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.startup</groupId>
             <artifactId>card-images</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -36,7 +33,6 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
-            <version>${springfox.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

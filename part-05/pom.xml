@@ -22,7 +22,8 @@
         <module>rest-exception</module>
         <module>api-gateway</module>
         <module>e2e-tests</module>
-        <module>authentication</module>
+        <module>auth</module>
+        <module>frontend</module>
     </modules>
 
 </project>

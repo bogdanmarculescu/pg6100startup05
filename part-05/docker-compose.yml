@@ -11,6 +11,14 @@ services:
     depends_on:
       - discovery
 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+  rabbitmq:
+    image: "rabbitmq:3"
+
   discovery:
     image: "consul:1.8"
     environment:
@@ -19,7 +27,7 @@ services:
   redis:
     image: "redis:latest"
 
-  postgres-authentication:
+  postgres-auth:
     image: "postgres:10"
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
@@ -34,14 +42,15 @@ services:
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
 
-  authentication:
+  auth:
     build:
-      context: ./authentication
+      context: ./auth
       dockerfile: Dockerfile
     depends_on:
       - api-gateway
       - redis
-      - postgres-authentication
+      - postgres-auth
+      - rabbitmq
 
   cards_0:
     build:
@@ -67,7 +76,8 @@ services:
       - api-gateway
       - discovery
       - postgres-user-collections
-      - authentication
+      - auth
+      - rabbitmq
 
   scores:
     build:
@@ -77,5 +87,6 @@ services:
       - api-gateway
       - discovery
       - postgres-scores
+      - rabbitmq
 
 
