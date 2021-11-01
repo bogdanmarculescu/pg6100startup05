@@ -16,6 +16,7 @@
         <dependency>
             <groupId>org.startup</groupId>
             <artifactId>cards-dto</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.startup</groupId>
@@ -24,6 +25,7 @@
         <dependency>
             <groupId>org.startup</groupId>
             <artifactId>card-images</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
