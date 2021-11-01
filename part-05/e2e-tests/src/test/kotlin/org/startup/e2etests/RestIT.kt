@@ -33,7 +33,7 @@ class RestIT {
 
         @Container
         @JvmField
-        val env = KDockerComposeContainer("card-game", File("../docker-compose.yml"))
+        val env = KDockerComposeContainer("part-05", File("../docker-compose.yml"))
             .withExposedService("discovery", 8500,
                 Wait.forListeningPort().withStartupTimeout(Duration.ofSeconds(240)))
             .withLogConsumer("cards_0") { print("[CARD_0] " + it.utf8String) }
