@@ -19,15 +19,15 @@ spring:
         - id: Cards
           uri: lb://cards-service
           predicates:
-            - Path=api/cards/**
+            - Path=/api/cards/**
         - id: Scores
           uri: lb://scores-service
           predicates:
-            - Path=api/scores/**
+            - Path=/api/scores/**
         - id: User-Collections
           uri: lb://user-collections-service
           predicates:
-            - Path=api/user-collections/**
+            - Path=/api/user-collections/**
         - id: Frontend
           uri: http://frontend:8080
           predicates:

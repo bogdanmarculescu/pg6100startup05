@@ -1,6 +1,8 @@
 spring:
   mvc:
     throwExceptionIfNoHandlerFound: true
+  resources:
+    add-mappings: false
   application:
     name: cards-service
   session:
@@ -11,6 +13,3 @@ spring:
       port: 8500
       discovery:
         instanceId: ${spring.application.name}:${random.value}
-  web:
-    resources:
-      add-mappings: false
