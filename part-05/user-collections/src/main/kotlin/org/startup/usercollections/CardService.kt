@@ -20,6 +20,7 @@ import org.springframework.core.ParameterizedTypeReference
 
 @Service
 class CardService (
+    private val client : RestTemplate,
     private val circuitBreakerFactory : Resilience4JCircuitBreakerFactory
 ){
 
@@ -39,7 +40,7 @@ class CardService (
 
     private lateinit var cb: CircuitBreaker
 
-    private val client = RestTemplate()
+    //private val client = RestTemplate()
 
 
     @PostConstruct
